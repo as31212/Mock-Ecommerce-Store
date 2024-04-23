@@ -1,0 +1,45 @@
+/* boiler plate */
+:root{
+  --nav-color: black;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+/* Nav Styles */
+
+header{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  top: 0;
+}
+#logo-container{
+  display: flex;
+  gap: 1rem;
+}
+#logo-container i{
+color: orange;
+font-size: 4rem;
+}
+#logo-container h2{
+  font-size: 2rem;
+  margin-top: 15px;
+  font-family: sans-serif
+}
+header ul{
+  display: flex;
+  gap: 3rem;
+  margin-right: 10rem;
+  margin-top: 1rem;
+}
+header li{
+  font-style: none;
+  list-style: none;
+  font-size: 1.3rem;
+}
+
