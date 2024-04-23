@@ -1,22 +1,27 @@
-
+import { Link, useNavigate } from 'react-router-dom';
 const Nav = ()=>{
+
+    const navigate = useNavigate();
+    const handleClick = (path)=>{
+        navigate(path);
+    }
 
     return(
         <>
         <header>
-            <div id="logo-container">
+            <div onClick={()=> handleClick('/Shop')} id="logo-container">
             <i className="fa-solid fa-bag-shopping"></i>
                 <h2>SHOP - IT</h2>
             </div>
             <ul>
-                <li>Shop</li>
-                <li>Men</li>
-                <li>Women</li>
-                <li>Kids</li>
+                <li><Link to="/Shop">Shop</Link></li>
+                <li><Link to="/Men">Men</Link></li>
+                <li><Link to="/Women">Women</Link></li>
+                <li><Link to="/Kids">Kids</Link></li>
             </ul>
             <div id="nav-button-container">
-                <button>Login</button>
-                <i className="fa-solid fa-cart-shopping"></i>
+                <button onClick={()=> handleClick('/login')}>Login</button>
+                <i onClick={()=> handleClick('/Cart')} className="fa-solid fa-cart-shopping"></i>
             </div>
         </header>
         </>
