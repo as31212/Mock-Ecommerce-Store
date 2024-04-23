@@ -16,7 +16,7 @@ const Nav = ()=>{
             </ul>
             <div id="nav-button-container">
                 <button>Login</button>
-                <button><i className="fa-solid fa-cart-shopping"></i></button>
+                <i className="fa-solid fa-cart-shopping"></i>
             </div>
         </header>
         </>
