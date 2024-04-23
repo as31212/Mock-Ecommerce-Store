@@ -48,7 +48,7 @@ header li{
   height: 30px;
   text-decoration: none;
 }
-a{
+header a{
   text-decoration: none;
   color: black;
 }
@@ -88,3 +88,45 @@ header li:hover{
 
 /* Shop Component Styles */
 
+/* Login Component Styles */
+
+#login-div , #sign-in-div{
+  width: 500px;
+  height: 500px;
+  margin: 2rem auto;
+  padding: 4rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#login-div input, #sign-in-div input{
+  display: block;
+  margin: 2.5rem 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+#login-div button, #sign-in-div button{
+  width: 100%;
+  padding: .7rem;
+  font-size: 1.2rem;
+  background-color: orange;
+  color: white;
+  border: none;
+  margin-bottom: 1rem;
+  filter: brightness(100%);
+}
+
+#login-div button:hover, #sign-in-div button:hover{
+  filter: brightness(110%);
+}
+#login-div input[type="checkbox"], #sign-in-div input[type="checkbox"] {
+  width: 10px;
+  margin-right: 1rem;
+  display: inline-block;
+  scale: 150%;
+  
+}
+#login-div a,#sign-in-div a{
+  text-decoration: none;
+  color: orange;
+  font-weight: 700;
+}

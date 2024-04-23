@@ -6,8 +6,9 @@ import Men from './components/Men'
 import Women from './components/Women'
 import Kids from './components/Kids'
 import Shop from './components/Shop'
-import Login from './components/Login';
+import Login from './components/login/Login';
 import Cart from './components/Cart';
+import SignIn from './components/login/SignIn';
 
 
 function App() {
@@ -25,13 +26,14 @@ useEffect(()=>{
   return (
     <Router>
       <Nav />
-      <Routes>
+      <Routes> 
         <Route path='/Men' element={<Men />} />
         <Route path='/Women' element={<Women />} />
         <Route path='/Kids' element={<Kids />} />
         <Route path='/Shop' element={<Shop data={data} />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/Cart' element={<Cart />} />
+        <Route path='/SignIn' element={<SignIn />} /> 
       </Routes>
     </Router>
   )
