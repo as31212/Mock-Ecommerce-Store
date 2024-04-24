@@ -1,6 +1,7 @@
 import { useState,useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './components/Nav';
 import Men from './components/Men';
 import Women from './components/Women';
@@ -8,7 +9,7 @@ import Kids from './components/Kids';
 import Shop from './components/Shop';
 import Login from './components/login/Login';
 import Cart from './components/Cart';
-import SignIn from './components/login/SignIn';
+import SignUp from './components/login/SignUp';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         <Route path='/' element={<Shop />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/Cart' element={<Cart />} />
-        <Route path='/SignIn' element={<SignIn />} /> 
+        <Route path='/SignUp' element={<SignUp />} /> 
       </Routes>
     </Router>
   )

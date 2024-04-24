@@ -1,11 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
 
-const SignIn = () => {
+const SignUp = () => {
   return (
     <>
       <div id="sign-in-div">
         <h2>
-          <b>Sign In</b>
+          <b>Sign Up</b>
         </h2>
         <input type="text" placeholder="Your name" />
         <input type="email" placeholder="Email address" />
@@ -20,4 +20,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;

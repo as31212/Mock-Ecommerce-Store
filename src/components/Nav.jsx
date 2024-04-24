@@ -22,7 +22,7 @@ const location = useLocation();
                 <li className={location.pathname === '/Kids'?'active':''}><Link to="/Kids">Kids</Link></li>
             </ul>
             <div id="nav-button-container">
-                <button className={location.pathname === '/Login' || location.pathname === '/SignIn'? 'change':'unchanged'} onClick={()=> handleClick('/Login')}>Login</button>
+                <button className={location.pathname === '/Login' || location.pathname === '/SignUp'? 'change':'unchanged'} onClick={()=> handleClick('/Login')}>Login</button>
                 <i onClick={()=> handleClick('/Cart')} className={`fa-solid fa-cart-shopping ${location.pathname === '/Cart' ? 'full' : ''}`}></i>
             </div>
         </header>
