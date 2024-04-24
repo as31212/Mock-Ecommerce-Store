@@ -1,6 +1,5 @@
 
-const Shop = ({data})=>{
-   console.log(data);
+const Shop = ()=>{
 
     return(
         <>
