@@ -1,4 +1,5 @@
 import { Link,useLocation,useNavigate } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Nav = ()=>{
     const navigate = useNavigate();

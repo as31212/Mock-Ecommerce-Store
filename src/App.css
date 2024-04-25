@@ -1,4 +1,4 @@
-/* boiler plate */
+/* !boiler plate! */
 :root {
   --nav-color: black;
 }
@@ -8,11 +8,11 @@
   box-sizing: 0;
   scroll-behavior: smooth;
 }
-body{
+body {
   overflow-x: hidden;
 }
 
-/* Nav Styles */
+/* !Nav Styles! */
 
 header {
   width: 100vw;
@@ -103,24 +103,25 @@ header .change {
   background-color: white;
   border: 1px solid black;
 }
-/* Shop Component Styles */
+/* !Shop Component Styles! */
 
+/* page 1 */
 #shop-first-page {
   display: flex;
   justify-content: space-around;
 }
-#shop-first-page i{
+#shop-first-page i {
   position: relative;
   top: 5px;
 }
-#shop-first-page #first-page-shop-text{
+#shop-first-page #first-page-shop-text {
   margin-top: 10rem;
 }
-#shop-first-page #first-page-shop-text h2{
+#shop-first-page #first-page-shop-text h2 {
   font-size: 5rem;
   margin-bottom: 2rem;
 }
-#shop-first-page button{
+#shop-first-page button {
   padding: 1.5rem;
   font-size: 2rem;
   color: white;
@@ -129,43 +130,119 @@ header .change {
   border-radius: 40px;
   filter: brightness(100%);
 }
-#shop-first-page button:hover{
-filter: brightness(110%);
+#shop-first-page button:hover {
+  filter: brightness(110%);
 }
 #shop-first-page img {
   height: 800px;
   margin-top: 1rem;
 }
-.orange-bold{
+.orange-bold {
   font-weight: 700;
   color: orange;
 }
-.shop-page{
+.page {
   width: 100%;
   height: 100vh;
 }
-#shop-first-page a{
+#shop-first-page a {
   text-decoration: none;
   color: white;
 }
-#shop-second-page{
+
+/* page 2 */
+
+#shop-second-page {
   text-align: center;
 }
-#shop-second-page hr{
-  width: 40%;
+#shop-second-page hr {
+  width: 200px;
   margin: 0 auto;
   border: 2px solid orange;
 }
-#shop-third-page{
-text-align: center;
+.item-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 3rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+  justify-content: center;
 }
-#shop-third-page hr{
-  width: 40%;
-  margin: 0 auto;
-  border: 2px solid orange;
+.item img {
+  width: 350px;
+  height: 450px;
+}
+.item {
+  transition: all 0.2s ease;
+}
+.item:hover {
+  scale: 110%;
+}
+.item span {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.item .initial-price {
+  text-decoration: line-through;
+  color: gray;
+}
+.item .sale-price {
+  font-weight: 500;
 }
 
-/* Login Component Styles */
+/* page 3 */
+#shop-third-page {
+  text-align: center;
+}
+#shop-third-page hr {
+  width: 200px;
+  margin: 0 auto;
+  border: 2px solid orange;
+}
+.showing-less {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  margin-bottom: 2rem;
+  transition: all 0.5s ease;
+}
+.showing-more {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  transition: all 0.5s ease;
+  color: white;
+  background-color: orange;
+}
+#show-more-button:hover {
+  color: white;
+  background-color: orange;
+}
+/* page 4 */
+#shop-fourth-page {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffb71c;
+  text-align: left;
+  color: white;
+  margin: 0 auto 5rem auto;
+  padding: 0 2rem 0 0;
+}
+#shop-text-div {
+  margin-top: 4rem;
+}
+.large{
+  font-size: 10rem;
+}
+
+/* !Login Component Styles! */
 
 #login-div,
 #sign-in-div {
@@ -211,4 +288,35 @@ text-align: center;
   text-decoration: none;
   color: orange;
   font-weight: 700;
+}
+
+/* !Footer! */
+
+footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+}
+
+#footer-icons{
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.2rem;
+  gap: 2rem;
+}
+#footer-icons i{
+  transition: all .2s ease;
+}
+#footer-icons i:hover{
+  color: orange;
+  scale: 110%;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+
 }

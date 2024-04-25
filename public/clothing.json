@@ -1,0 +1,389 @@
+
+[
+    {
+      "id": 1,
+      "item_name": "Vintage Denim Jacket",
+      "sale_price": 49.99,
+      "initial_price": 59.99,
+      "img": "https://images.wrangler.com/is/image/Wrangler/112335737-HERO?$KDP-XXLARGE$",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 2,
+      "item_name": "Cozy Flannel Shirt",
+      "sale_price": 24.99,
+      "initial_price": 29.99,
+      "img": "https://www.jachsny.com/cdn/shop/files/WL7_3.jpg?v=1697207741",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 3,
+      "item_name": "Chic Linen Pants",
+      "sale_price": 34.99,
+      "initial_price": 44.99,
+      "img": "https://m.media-amazon.com/images/I/61EA1p1xdeL._AC_UY1000_DpWeblab_.jpg",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 4,
+      "item_name": "Casual Cotton Shirt",
+      "sale_price": 19.99,
+      "initial_price": 24.99,
+      "img": "https://m.media-amazon.com/images/I/71QqRey7YSL._AC_UY350_.jpg",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 5,
+      "item_name": "Urban Cargo Pants",
+      "sale_price": 39.99,
+      "initial_price": 49.99,
+      "img": "https://images.urbndata.com/is/image/UrbanOutfitters/67693838_015_b?$xlarge$&fit=constrain&qlt=80&wid=640",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 6,
+      "item_name": "Vintage Leather Jacket",
+      "sale_price": 69.99,
+      "initial_price": 89.99,
+      "img": "https://www.wilsonsleather.com/media/catalog/product/e/-/e-wv7a1068_ewv7a1068c01_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=1542&width=1300&canvas=1300:1542",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 7,
+      "item_name": "Retro Plaid Shirt",
+      "sale_price": 29.99,
+      "initial_price": 34.99,
+      "img": "https://images.wrangler.com/is/image/Wrangler/112337459-HERO?$KDP-XLARGE$",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 8,
+      "item_name": "Elegant Silk Blouse",
+      "sale_price": 44.99,
+      "initial_price": 54.99,
+      "img": "https://www.lilysilk.com/media/catalog/product/1/_/1_276.jpg?quality=80&bg-color=255%2C255%2C255&fit=bounds&width=1800",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 9,
+      "item_name": "Classic Khaki Pants",
+      "sale_price": 29.99,
+      "initial_price": 39.99,
+      "img": "https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dw90182e85/images/2023/3P001016_250_OF_0035_A.jpg?sw=657&sh=782&sm=cut&strip=false",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 10,
+      "item_name": "Sporty Hooded Jacket",
+      "sale_price": 54.99,
+      "initial_price": 69.99,
+      "img": "https://cdn.shoplightspeed.com/shops/662319/files/49059411/1652x1652x2/the-north-face-b-reversible-north-down-hooded-jack.jpg",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 11,
+      "item_name": "Bohemian Maxi Dress",
+      "sale_price": 39.99,
+      "initial_price": 49.99,
+      "img": "https://ae01.alicdn.com/kf/S0b05e987c8c9445988aa6dd672584feb4.jpg_640x640Q90.jpg_.webp",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 12,
+      "item_name": "Trendy Skinny Jeans",
+      "sale_price": 34.99,
+      "initial_price": 44.99,
+      "img": "https://images.only.com/15300955/4423983/005/only-skinnyfitmidwaistjeans-blue.jpg?v=e981c51cbb77c42604dab1658288ea13&format=webp&width=1280&quality=90&key=25-0-3",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 13,
+      "item_name": "Graphic Tee",
+      "sale_price": 14.99,
+      "initial_price": 19.99,
+      "img": "https://www.mightly.com/cdn/shop/files/PO22TS001-VN_2.jpg?v=1711552429&width=2500",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 14,
+      "item_name": "Flowy Floral Blouse",
+      "sale_price": 34.99,
+      "initial_price": 39.99,
+      "img": "https://www.lilysilk.com/media/catalog/product/1/_/1_276.jpg?quality=80&bg-color=255%2C255%2C255&fit=bounds&width=1800",
+      "clothing_type": "Women"
+   
+
+ },
+    {
+      "id": 15,
+      "item_name": "Cargo Shorts",
+      "sale_price": 24.99,
+      "initial_price": 29.99,
+      "img": "https://s7d2.scene7.com/is/image/aeo/0132_7338_238_of?$pdp-m-opt$",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 16,
+      "item_name": "Striped Button-Up Shirt",
+      "sale_price": 29.99,
+      "initial_price": 34.99,
+      "img": "https://hamiltonandadams.com/cdn/shop/files/MS079-2629-NAVY-WHITE-MP076-2804-NATURAL-3_1440x1920_crop_center_4623a391-c798-4c38-8186-3b982aaf9870.webp?v=1684441266&width=1080",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 17,
+      "item_name": "Chic Palazzo Pants",
+      "sale_price": 39.99,
+      "initial_price": 49.99,
+      "img": "https://m.media-amazon.com/images/I/61EA1p1xdeL._AC_UY1000_DpWeblab_.jpg",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 18,
+      "item_name": "Tailored Blazer",
+      "sale_price": 59.99,
+      "initial_price": 74.99,
+      "img": "https://www.lilysilk.com/media/catalog/product/1/_/1_276.jpg?quality=80&bg-color=255%2C255%2C255&fit=bounds&width=1800",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 19,
+      "item_name": "Vintage Graphic Tee",
+      "sale_price": 19.99,
+      "initial_price": 24.99,
+      "img": "https://www.mightly.com/cdn/shop/files/PO22TS001-VN_2.jpg?v=1711552429&width=2500",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 20,
+      "item_name": "Boho Fringe Jacket",
+      "sale_price": 49.99,
+      "initial_price": 59.99,
+      "img": "https://ae01.alicdn.com/kf/S0b05e987c8c9445988aa6dd672584feb4.jpg_640x640Q90.jpg_.webp",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 21,
+      "item_name": "Slim Fit Chinos",
+      "sale_price": 34.99,
+      "initial_price": 44.99,
+      "img": "https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dw90182e85/images/2023/3P001016_250_OF_0035_A.jpg?sw=657&sh=782&sm=cut&strip=false",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 22,
+      "item_name": "Denim Overalls",
+      "sale_price": 39.99,
+      "initial_price": 49.99,
+      "img": "https://images.wrangler.com/is/image/Wrangler/112335737-HERO?$KDP-XXLARGE$",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 23,
+      "item_name": "Striped Polo Shirt",
+      "sale_price": 24.99,
+      "initial_price": 29.99,
+      "img": "https://cdn.04651.com/media/catalog/product/cache/872820d76c3969f0c403944b0a276507/6/4/6400_036665_210_04651-polohemd-halbarm_102_ps.1639484210.jpg",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 24,
+      "item_name": "Bohemian Kimono",
+      "sale_price": 44.99,
+      "initial_price": 54.99,
+      "img": "https://ae01.alicdn.com/kf/S0b05e987c8c9445988aa6dd672584feb4.jpg_640x640Q90.jpg_.webp",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 25,
+      "item_name": "Cargo Jogger Pants",
+      "sale_price": 39.99,
+      "initial_price": 49.99,
+      "img": "https://images.urbndata.com/is/image/UrbanOutfitters/67693838_015_b?$xlarge$&fit=constrain&qlt=80&wid=640",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 26,
+      "item_name": "Knit Cardigan",
+      "sale_price": 29.99,
+      "initial_price": 39.99,
+      "img": "https://www.lilysilk.com/media/catalog/product/1/_/1_276.jpg?quality=80&bg-color=255%2C255%2C255&fit=bounds&width=1800",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 27,
+      "item_name": "Printed Hawaiian Shirt",
+      "sale_price": 34.99,
+      "initial_price": 44.99,
+      "img": "https://images.wrangler.com/is/image/Wrangler/112337459-HERO?$KDP-XLARGE$",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 28,
+      "item_name": "Faux Leather Leggings",
+      "sale_price": 29.99,
+      "initial_price": 39.99,
+      "img": "https://www.lilysilk.com/media/catalog/product/1/_/1_276.jpg?quality=80&bg-color=255%2C255%2C255&fit=bounds&width=1800",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 29,
+      "item_name": "Classic V-neck Sweater",
+      "sale_price": 39.99,
+      "initial_price": 49.99,
+      "img": "https://www.mightly.com/cdn/shop/files/PO22TS001-VN_2.jpg?v=1711552429&width=2500",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 30,
+      "item_name": "Boho Embroidered Dress",
+      "sale_price": 49.99,
+      "initial_price": 59.99,
+      "img": "https://ae01.alicdn.com/kf/S0b05e987c8c9445988aa6dd672584feb4.jpg_640x640Q90.jpg_.webp",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 31,
+      "item_name": "Vintage Bomber Jacket",
+      "sale_price": 59.99,
+      "initial_price": 69.99,
+      "img": "https://www.wilsonsleather.com/media/catalog/product/e/-/e-wv7a1068_ewv7a1068c01_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=1542&width=1300&canvas=1300:1542",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 32,
+      "item_name": "Striped Henley Shirt",
+      "sale_price": 19.99,
+      "initial_price": 24.99,
+      "img": "https://images.wrangler.com/is/image/Wrangler/112337459-HERO?$KDP-XLARGE$",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 33,
+      "item_name": "Faux Fur Vest",
+      "sale_price": 39.99,
+      "initial_price": 49.99,
+      "img": "https://www.lilysilk.com/media/catalog/product/1/_/1_276.jpg?quality=80&bg-color=255%2C255%2C255&fit=bounds&width=1800",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 34,
+      "item_name": "Cropped Denim Jacket",
+      "sale_price": 44.99,
+      "initial_price": 54.99,
+      "img": "https://images.wrangler.com/is/image/Wrangler/112335737-HERO?$KDP-XXLARGE$",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 35,
+      "item_name": "Plaid Flannel Shirt",
+      "sale_price": 24.99,
+      "initial_price": 29.99,
+      "img": "https://www.jachsny.com/cdn/shop/files/WL7_3.jpg?v=1697207741",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 36,
+      "item_name": "Wide-leg Culottes",
+      "sale_price": 34.99,
+      "initial_price": 44.99,
+      "img": "https://m.media-amazon.com/images/I/61EA1p1xdeL._AC_UY1000_DpWeblab_.jpg",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 37,
+      "item_name": "Quilted Puffer Jacket",
+      "sale_price": 69.99,
+      "initial_price": 79.99,
+      "img": "https://www.wilsonsleather.com/media/catalog/product/e/-/e-wv7a1068_ewv7a1068c01_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=1542&width=1300&canvas=1300:1542",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 38,
+      "item_name": "Ruffled Wrap Blouse",
+      "sale_price": 29.99,
+      "initial_price": 34.99,
+      "img": "https://www.lilysilk.com/media/catalog/product/1/_/1_276.jpg?quality=80&bg-color=255%2C255%2C255&fit=bounds&width=1800",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 39,
+      "item_name": "Athletic Track Pants",
+      "sale_price": 39.99,
+      "initial_price": 49.99,
+      "img": "https://images.urbndata.com/is/image/UrbanOutfitters/67693838_015_b?$xlarge$&fit=constrain&qlt=80&wid=640",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 40,
+      "item_name": "Bohemian Patchwork Skirt",
+      "sale_price": 49.99,
+      "initial_price": 59.99,
+      "img": "https://ae01.alicdn.com/kf/S0b05e987c8c9445988aa6dd672584feb4.jpg_640x640Q90.jpg_.webp",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 41,
+      "item_name": "Cargo Utility Jacket",
+      "sale_price": 59.99,
+      "initial_price": 69.99,
+      "img": "https://images.wrangler.com/is/image/Wrangler/112335737-HERO?$KDP-XXLARGE$",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 42,
+      "item_name": "Chambray Button-Up Shirt",
+      "sale_price": 29.99,
+      "initial_price": 34.99,
+      "img": "https://www.jachsny.com/cdn/shop/files/WL7_3.jpg?v=1697207741",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 43,
+      "item_name": "Lace Trim Camisole",
+      "sale_price": 19.99,
+      "initial_price": 24.99,
+      "img": "https://www.lilysilk.com/media/catalog/product/1/_/1_276.jpg?quality=80&bg-color=255%2C255%2C255&fit=bounds&width=1800",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 44,
+      "item_name": "Cargo Jogger Shorts",
+      "sale_price": 24.99,
+      "initial_price": 29.99,
+      "img": "https://images.urbndata.com/is/image/UrbanOutfitters/67693838_015_b?$xlarge$&fit=constrain&qlt=80&wid=640",
+      "clothing_type": "Kids"
+    },
+    {
+      "id": 45,
+      "item_name": "Flowy Ruffled Blouse",
+      "sale_price": 34.99,
+      "initial_price": 39.99,
+      "img": "https://www.lilysilk.com/media/catalog/product/1/_/1_276.jpg?quality=80&bg-color=255%2C255%2C255&fit=bounds&width=1800",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 46,
+      "item_name": "Quilted Bomber Jacket",
+      "sale_price": 49.99,
+      "initial_price": 59.99,
+      "img": "https://www.wilsonsleather.com/media/catalog/product/e/-/e-wv7a1068_ewv7a1068c01_1.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=1542&width=1300&canvas=1300:1542",
+      "clothing_type": "Men"
+    },
+    {
+      "id": 47,
+      "item_name": "Distressed Skinny Jeans",
+      "sale_price": 39.99,
+      "initial_price": 49.99,
+      "img": "https://images.only.com/15300955/4423983/005/only-skinnyfitmidwaistjeans-blue.jpg?v=e981c51cbb77c42604dab1658288ea13&format=webp&width=1280&quality=90&key=25-0-3",
+      "clothing_type": "Women"
+    },
+    {
+      "id": 48,
+      "item_name": "Plaid Bomber Jacket",
+      "sale_price": 54.99,
+      "initial_price": 69.99,
+      "img": "https://cdn.shoplightspeed.com/shops/662319/files/49059411/1652x1652x2/the-north-face-b-reversible-north-down-hooded-jack.jpg",
+      "clothing_type": "Kids"
+    }
+]
