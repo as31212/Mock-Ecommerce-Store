@@ -4,7 +4,9 @@ const Women = ()=>{
 
     return(
         <>
-        <p>Women</p>
+        <div className="page">
+            <p>Women</p>
+        </div>
         <Footer />
         </>
     );

@@ -3,7 +3,9 @@ const Kids = ()=>{
 
     return(
         <>
-        <p>Kids</p>
+        <div className="page">
+            <p>Kids</p>
+        </div>
         <Footer />
         </>
     );

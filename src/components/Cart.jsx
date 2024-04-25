@@ -4,7 +4,9 @@ const Cart = ()=>{
 
     return(
         <>
-        <p>Cart</p>
+        <div className="page">
+            <p>Cart</p>
+        </div>
         <Footer />
         </>
     );
