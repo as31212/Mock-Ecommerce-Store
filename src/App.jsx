@@ -24,7 +24,8 @@ function App() {
       const response = await fetch("/clothing.json");
       const data = await response.json();
       setData(data);
-    } catch (error) {
+    }
+     catch (error) {
       console.error(`Error: ${error}`);
     }
   };
@@ -41,20 +42,24 @@ function App() {
     console.log('dropdown updated');
   }
 
-
+// clicking item
+const [currItem,setCurrItem] = useState(1);
+const changeCurrItem = (id)=>{
+  setCurrItem(id);
+}
 
   return (
     <Router>
       <Nav />
       <Routes>
-        <Route path="/Men" element={<Men dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
-        <Route path="/Women" element={<Women dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
-        <Route path="/Kids" element={<Kids dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
-        <Route path="/" element={<Shop data={data} /> } />
+        <Route path="/Men" element={<Men changeCurrItem={changeCurrItem} dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
+        <Route path="/Women" element={<Women changeCurrItem={changeCurrItem} dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
+        <Route path="/Kids" element={<Kids changeCurrItem={changeCurrItem} dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
+        <Route path="/" element={<Shop changeCurrItem={changeCurrItem} data={data} /> } />
         <Route path="/Login" element={<Login />} />
         <Route path="/Cart" element={<Cart data={data} />} />
         <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/Purchase" element={<Purchase />} />
+        <Route path="/Purchase" element={<Purchase currItem={currItem} data={data}/>} />
       </Routes>
     </Router>
   );

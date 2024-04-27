@@ -1,29 +1,31 @@
 import { useState } from "react";
 import Footer from "./Footer";
-const Shop = ({ data }) => {
+import { Link } from "react-router-dom";
+
+const Shop = ({ data,changeCurrItem }) => {
   // data mapping
   const items = data.map((el) => {
     return (
-      <div className={`item ${el.clothing_type}`} id={el.id} key={el.id}>
-        <img src={el.img} alt={`${el.item_name} picture`} />
+      <div onClick={()=>{changeCurrItem(el.id)}} className={`item ${el.clothing_type}`} id={el.id} key={el.id}>
+        <Link to='/Purchase'><img src={el.img} alt={`${el.item_name} picture`} />
         <p>{el.item_name}</p>
         <p>
           <span className="sale-price">{`$${el.sale_price} `}</span> 
           <span className="initial-price">{`$${el.initial_price}`}</span>
-        </p>
+        </p></Link>
       </div>
     );
   });
 
   const latestCollection = data.filter(el=> el.clothing_type === 'Men').map((el) => {
     return (
-      <div className={`item ${el.clothing_type}`} id={el.id} key={el.id}>
-        <img src={el.img} alt={`${el.item_name} picture`} />
+      <div onClick={()=>changeCurrItem(el.id)} className={`item ${el.clothing_type}`} id={el.id} key={el.id}>
+        <Link to='/Purchase'><img src={el.img} alt={`${el.item_name} picture`} />
         <p>{el.item_name}</p>
         <p>
           <span className="sale-price">{`$${el.sale_price} `}</span> 
           <span className="initial-price">{`$${el.initial_price}`}</span>
-        </p>
+        </p></Link>
       </div>
     );
   });
