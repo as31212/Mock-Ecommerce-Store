@@ -65,7 +65,13 @@ const Shop = ({ data }) => {
         <div className="item-container">
           {!more?latestCollection.slice(0,8) : latestCollection.slice(0,16)}
         </div>
-        <button className={more ? 'showing-more' : 'showing-less'} id="show-more-button" onClick={()=>{toggleShow()}}>{!more ? 'Show More' : 'Show Less'}</button>
+        {more ? (
+  <a href="#shop-third-page" className="button-wrapper">
+    <button className="showing-more" id="show-more-button" onClick={toggleShow}>Show Less</button>
+  </a>
+) : (
+  <button className="showing-less" id="show-more-button" onClick={toggleShow}>Show More</button>
+)}
         <div className="page" id="shop-fourth-page">
           <img src="https://media.istockphoto.com/id/1285265702/photo/joyful-black-guy-jumping-up-and-pointing-aside.jpg?s=612x612&w=0&k=20&c=wH6q7qgusf5DV1NcMki_x7jQWsJpVxF9tp5QMk6j0o8=" alt="deals man" />
           <div id="shop-text-div">

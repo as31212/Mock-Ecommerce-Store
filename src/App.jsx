@@ -11,6 +11,7 @@ import Shop from "./components/Shop";
 import Login from "./components/login/Login";
 import Cart from "./components/Cart";
 import SignUp from "./components/login/SignUp";
+import Purchase from "./components/Purchase";
 import Footer from "./components/Footer";
 
 function App() {
@@ -32,17 +33,28 @@ function App() {
     fetchData();
   }, []);
 
+
+  // dropdown state 
+  const [dropdown,setDropdown] = useState('low-high');
+  const changeDropdown = (event)=>{
+    setDropdown(event.target.value);
+    console.log('dropdown updated');
+  }
+
+
+
   return (
     <Router>
       <Nav />
       <Routes>
-        <Route path="/Men" element={<Men data={data} />} />
-        <Route path="/Women" element={<Women data={data} />} />
-        <Route path="/Kids" element={<Kids data={data} />} />
+        <Route path="/Men" element={<Men dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
+        <Route path="/Women" element={<Women dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
+        <Route path="/Kids" element={<Kids dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
         <Route path="/" element={<Shop data={data} /> } />
         <Route path="/Login" element={<Login />} />
         <Route path="/Cart" element={<Cart data={data} />} />
         <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/Purchase" element={<Purchase />} />
       </Routes>
     </Router>
   );
