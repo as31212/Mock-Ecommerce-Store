@@ -50,7 +50,30 @@ const changeCurrItem = (id)=>{
 
 // cart logic
 
+const [cart, setCart] = useState([]);
 
+const addToCart = (obj) => {
+  if (cart.some((el) => el.id === obj.id)) {
+    const dupeCart = [...cart];
+    const dupeIndex = cart.findIndex((el) => el.id === obj.id);
+    dupeCart[dupeIndex].quantity += 1;
+    setCart(dupeCart); 
+  } else {
+    setCart([...cart,
+      {
+        id: obj.id,
+        quantity: 1,
+        img: obj.img,
+        clothing_type: obj.clothing_type,
+        sale_price: obj.sale_price,
+        item_name: obj.item_name,
+      },
+    ]);
+  }
+
+
+
+}
 
   return (
     <Router>
@@ -61,9 +84,9 @@ const changeCurrItem = (id)=>{
         <Route path="/Kids" element={<Kids changeCurrItem={changeCurrItem} dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
         <Route path="/" element={<Shop changeCurrItem={changeCurrItem} data={data} /> } />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Cart" element={<Cart data={data} />} />
+        <Route path="/Cart" element={<Cart cart={cart} data={data} />} />
         <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/Purchase" element={<Purchase currItem={currItem} data={data}/>} />
+        <Route path="/Purchase" element={<Purchase cart={cart} addToCart={addToCart} currItem={currItem} data={data}/>} />
       </Routes>
     </Router>
   );

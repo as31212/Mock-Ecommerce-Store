@@ -1,9 +1,13 @@
 
 import Footer from "./Footer";
 
-const Purchase = ({currItem,data}) => {
+const Purchase = ({currItem,data,cart,addToCart}) => {
     
 const item = data.find(el=> el.id === currItem);
+const handleClick = ()=>{
+    addToCart(item);
+    console.log(item);
+}
     return (
         <>
             <div id="purchase-page">
@@ -21,7 +25,7 @@ const item = data.find(el=> el.id === currItem);
                        <button>XL</button>
                        <button>XXL</button>
                    </div>
-            <button id="add-cart">Add To Cart</button>
+            <button onClick={()=>handleClick()} id="add-cart">Add To Cart</button>
                </div>
 
             </div>
