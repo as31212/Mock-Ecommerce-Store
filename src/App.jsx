@@ -42,11 +42,15 @@ function App() {
     console.log('dropdown updated');
   }
 
-// clicking item
+// clicking item logic
 const [currItem,setCurrItem] = useState(1);
 const changeCurrItem = (id)=>{
   setCurrItem(id);
 }
+
+// cart logic
+
+
 
   return (
     <Router>
