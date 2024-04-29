@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import "./MQ-1000px.css"
+import "./MQ-1600px.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Nav from "./components/Nav";

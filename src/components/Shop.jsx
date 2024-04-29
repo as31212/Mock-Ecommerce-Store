@@ -74,7 +74,7 @@ const Shop = ({ data,changeCurrItem }) => {
 ) : (
   <button className="showing-less" id="show-more-button" onClick={toggleShow}>Show More</button>
 )}
-        <div className="page" id="shop-fourth-page">
+        <div id="shop-fourth-page">
           <img src="https://media.istockphoto.com/id/1285265702/photo/joyful-black-guy-jumping-up-and-pointing-aside.jpg?s=612x612&w=0&k=20&c=wH6q7qgusf5DV1NcMki_x7jQWsJpVxF9tp5QMk6j0o8=" alt="deals man" />
           <div id="shop-text-div">
             <h2><b>Special One Time Offer</b></h2>
