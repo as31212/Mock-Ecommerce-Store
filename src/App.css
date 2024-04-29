@@ -427,8 +427,57 @@ font-size: 20px;
 .cart-item{
   width: 100%;
   height: 10%;
+  display: flex;
+  gap: 150px;
 }
 .cart-item img{
+  width: 60px;
+  height: 80px;
+}
+.cart-item input{
   width: 100px;
-  height: 100px;
+  height: 40px;
+}
+.cart-item button{
+  width: 50px;
+  height: 60px;
+  border: none;
+  background-color: red;
+  color: white;
+  filter: brightness(100%);
+  border-radius: 10px;
+}
+.cart-item button:hover{
+filter: brightness(90%);
+}
+.page-cart{
+  margin: 70px auto;
+  width: 60%;
+  height: auto;
+  min-height: 100vh;
+}
+#sub-total{
+  margin-top: 100px;
+}
+#sub-total h2{
+margin-bottom:50px ;
+}
+#sub-total-title-span{
+  margin-right: 200px;
+}
+#shipping-title-span{
+  margin-right: 180px;
+}
+#total-title-span{
+  margin-right: 230px;
+}
+#sub-total button{
+  padding: 1rem;
+  background-color: orange;
+  filter: brightness(100%);
+  border: none;
+  color: white;
+}
+#sub-total button:hover{
+filter: brightness(90%);
 }
