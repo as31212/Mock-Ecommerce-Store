@@ -70,33 +70,21 @@ const addToCart = (obj) => {
       },
     ]);
   }
+
+
+
 }
 
-// quantity logic
-const updateQuantity = (id,quantity)=>{
-  if(quantity <= 0){
-    return;
-  }
-  const dupeCart = [...cart];
-  dupeCart.find(el=> el.id === id).quantity = quantity;
-  setCart(dupeCart);
-  }
-
-const removeFromCart = (id)=>{
-  const dupeCart = [...cart];
-  dupeCart.splice(cart.find(el=> el.id === id),1);
-  setCart(dupeCart);
-}
   return (
     <Router>
-      <Nav cart={cart} />
+      <Nav />
       <Routes>
         <Route path="/Men" element={<Men changeCurrItem={changeCurrItem} dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
         <Route path="/Women" element={<Women changeCurrItem={changeCurrItem} dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
         <Route path="/Kids" element={<Kids changeCurrItem={changeCurrItem} dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
         <Route path="/" element={<Shop changeCurrItem={changeCurrItem} data={data} /> } />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Cart" element={<Cart updateQuantity={updateQuantity} removeFromCart={removeFromCart} cart={cart} data={data} />} />
+        <Route path="/Cart" element={<Cart cart={cart} data={data} />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Purchase" element={<Purchase cart={cart} addToCart={addToCart} currItem={currItem} data={data}/>} />
       </Routes>

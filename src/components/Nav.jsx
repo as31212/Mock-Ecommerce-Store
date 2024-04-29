@@ -1,7 +1,7 @@
 import { Link,useLocation,useNavigate } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const Nav = ({cart})=>{
+const Nav = ()=>{
     const navigate = useNavigate();
     const handleClick = (path)=>{
         navigate(path);
@@ -24,7 +24,7 @@ const location = useLocation();
             </ul>
             <div id="nav-button-container">
                 <button className={location.pathname === '/Login' || location.pathname === '/SignUp'? 'change':'unchanged'} onClick={()=> handleClick('/Login')}>Login</button>
-                <i onClick={()=> handleClick('/Cart')} className={`fa-solid fa-cart-shopping cart-icon ${location.pathname === '/Cart' ? 'full' : ''}`}><span className='item-count'>{Number(cart.reduce((acc,el)=> acc + el.quantity,0)).toFixed(0)}</span></i>
+                <i onClick={()=> handleClick('/Cart')} className={`fa-solid fa-cart-shopping cart-icon ${location.pathname === '/Cart' ? 'full' : ''}`}><span className='item-count'>0</span></i>
                 
             </div>
         </header>
