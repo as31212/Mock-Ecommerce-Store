@@ -1,9 +1,5 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
-import "./MQ-1000px.css"
-import "./MQ-1600px.css"
-import "./MQ-600px.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Nav from "./components/Nav";
@@ -18,6 +14,12 @@ import Purchase from "./components/Purchase";
 import Footer from "./components/Footer";
 
 function App() {
+// hamburger bar
+const [activeNav,setActiveNav] = useState(false);
+const toggleNav = ()=>{
+  setActiveNav(!activeNav);
+}
+
   // data retrieval
 
   const [data, setData] = useState([]);
@@ -92,7 +94,7 @@ const removeFromCart = (id)=>{
 }
   return (
     <Router>
-      <Nav cart={cart} />
+      <Nav activeNav={activeNav} toggleNav={toggleNav} cart={cart} />
       <Routes>
         <Route path="/Men" element={<Men changeCurrItem={changeCurrItem} dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
         <Route path="/Women" element={<Women changeCurrItem={changeCurrItem} dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />

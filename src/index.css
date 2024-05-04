@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+}
+
+@media (max-width:1100px) {
+    #cover-img{
+        display: none;
+    }
+}
+@media (min-width:900px) {
+    #nav-links-toggle{
+        display: none;
+    }
+    #nav-hamburger{
+        display: none;
+    }
+}
+@media (max-width:900px) {
+    #shop-it-nav-text{
+        display: none;
+    }
+    #shop-it-logo{
+        display: none;
+    }
+    #cart-and-login{
+        display: none;
+    }
+}
+@media (max-width:900px) {
+    #nav-links{
+        display: none;
+    }
+    
+}
