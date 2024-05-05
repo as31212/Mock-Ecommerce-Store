@@ -29,10 +29,17 @@
     #cart-and-login{
         display: none;
     }
-}
-@media (max-width:900px) {
+    footer{
+        flex-direction: column;
+    }
     #nav-links{
         display: none;
     }
-    
+    #showing{
+        display: none;
+    }
+    .select-container{
+        flex-direction: column;
+    }
 }
+

@@ -6,29 +6,42 @@ const Shop = ({ data,changeCurrItem }) => {
   // data mapping
   const items = data.map((el) => {
     return (
-      <div onClick={()=>{changeCurrItem(el.id)}} className={` w-80 h-80 item hover:scale-105 duration-150 ${el.clothing_type}`} id={el.id} key={el.id}>
-        <Link to='/Purchase'><img src={el.img} alt={`${el.item_name} picture`} />
-        <p>{el.item_name}</p>
+      <div onClick={() => { changeCurrItem(el.id) }} className="w-80 h-3/4 mb-5 item hover:scale-105 duration-150 bg-white rounded-md" id={el.id} key={el.id}>
+      <Link to='/Purchase' className="block">
+        <img className="object-cover w-full h-96" src={el.img} alt={`${el.item_name} picture`} />
+      </Link>
+      <div className="p-4">
+        <p className="text-lg font-bold mb-2">{el.item_name}</p>
         <p>
-          <span className="sale-price">{`$${el.sale_price} `}</span> 
-          <span className="initial-price">{`$${el.initial_price}`}</span>
-        </p></Link>
+          <span className="sale-price font-bold text-gray-600">{`$${el.sale_price} `}</span>
+          <span className="initial-price text-gray-400 line-through">{`$${el.initial_price}`}</span>
+        </p>
       </div>
+    </div>
     );
   });
 
-  const latestCollection = data.filter(el=> el.clothing_type === 'Men').map((el) => {
+  const latestCollection = data.filter(el => el.clothing_type === 'Men').map((el) => {
     return (
-      <div onClick={()=>{changeCurrItem(el.id)}} className={` w-80 h-80 item hover:scale-105 duration-150 ${el.clothing_type}`} id={el.id} key={el.id}>
-        <Link to='/Purchase'><img src={el.img} alt={`${el.item_name} picture`} />
-        <p>{el.item_name}</p>
+      <div onClick={() => { changeCurrItem(el.id) }} className="w-80 h-3/4 mb-5 item hover:scale-105 duration-150 bg-white rounded-md" id={el.id} key={el.id}>
+      <Link to='/Purchase' className="block">
+        <img className="object-cover w-full h-96" src={el.img} alt={`${el.item_name} picture`} />
+      </Link>
+      <div className="p-4">
+        <p className="text-lg font-bold mb-2">{el.item_name}</p>
         <p>
-          <span className="sale-price">{`$${el.sale_price} `}</span> 
-          <span className="initial-price">{`$${el.initial_price}`}</span>
-        </p></Link>
+          <span className="sale-price font-bold text-gray-600">{`$${el.sale_price} `}</span>
+          <span className="initial-price text-gray-400 line-through">{`$${el.initial_price}`}</span>
+        </p>
       </div>
+    </div>
     );
   });
+  
+  
+  
+  
+  
 
   // Show more logic
   const [more,setMore] = useState(false);
@@ -66,23 +79,21 @@ const Shop = ({ data,changeCurrItem }) => {
       <div className="page" id="shop-third-page">
       <h2 className="text-center text-3xl font-semibold">Latest Collection</h2>
         <hr className="w-40 border-8 border-orange-400 mr-auto ml-auto" />
-        <div className="flex flex-wrap gap-10 p-10">
+        <div className="flex flex-wrap justify-center gap-10 p-20">
           {!more?latestCollection.slice(0,8) : latestCollection.slice(0,16)}
         </div>
         {more ? (
-  <a href="#shop-third-page" className="button-wrapper">
-    <button className="showing-more" id="show-more-button" onClick={toggleShow}>Show Less</button>
+  <a href="#shop-third-page" className="flex justify-center">
+    <button className="  mb-5 showing-more mr-auto ml-auto border-2 p-3 bg-white rounded-full hover:bg-orange-400 hover:text-black duration-150" id="show-more-button" onClick={toggleShow}>Show Less</button>
   </a>
 ) : (
-  <button className="showing-less" id="show-more-button" onClick={toggleShow}>Show More</button>
+  <div className="flex justify-center"><button className="  mb-5 showing-more mr-auto ml-auto border-2 p-3 bg-white rounded-full hover:bg-orange-400 hover:text-black duration-150" id="show-more-button" onClick={toggleShow}>Show More</button></div>
 )}
-        <div id="shop-fourth-page">
-          <img src="https://media.istockphoto.com/id/1285265702/photo/joyful-black-guy-jumping-up-and-pointing-aside.jpg?s=612x612&w=0&k=20&c=wH6q7qgusf5DV1NcMki_x7jQWsJpVxF9tp5QMk6j0o8=" alt="deals man" />
+        <div className="text-white flex flex-col gap-10 h-96 mx-10 justify-center items-center bg-orange-400 mb-5 "  id="shop-fourth-page">
           <div id="shop-text-div">
-            <h2><b>Special One Time Offer</b></h2>
-            <h2></h2>
-            <h2>Up to</h2>
-            <h2 className="large">30% OFF</h2>
+            <h2 className="text-6xl"><b>Special One Time Offer</b></h2>
+            <h2 className="text-4xl">Up to</h2>
+            <h2 className="text-7xl font-bold">30% OFF</h2>
             <h2><u>Your First Purchase</u></h2>
           </div>
         </div>
