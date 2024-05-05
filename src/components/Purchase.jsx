@@ -1,4 +1,4 @@
- 
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
 const Purchase = ({currItem,data,cart,addToCart}) => {
@@ -21,7 +21,7 @@ const handleClick = ()=>{
             <span className="text-lg font-semibold text-orange-400 mr-2">${item.sale_price}</span>
             <span className="text-gray-500 line-through">${item.initial_price}</span>
         </div>
-        <button className="bg-orange-400 hover:bg-orange-500 text-white font-semibold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out transform hover:scale-105" onClick={handleClick} id="add-cart">Add To Cart</button>
+        <Link to='/Cart'><button className="bg-orange-400 hover:bg-orange-500 text-white font-semibold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out transform hover:scale-105" onClick={handleClick} id="add-cart">Add To Cart</button></Link>
     </div>
 </div>
 <Footer />
