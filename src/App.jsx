@@ -19,6 +19,9 @@ const [activeNav,setActiveNav] = useState(false);
 const toggleNav = ()=>{
   setActiveNav(!activeNav);
 }
+const falseNav = () =>{
+  setActiveNav(false);
+}
 
   // data retrieval
 
@@ -94,7 +97,7 @@ const removeFromCart = (id)=>{
 }
   return (
     <Router>
-      <Nav activeNav={activeNav} toggleNav={toggleNav} cart={cart} />
+      <Nav falseNav={falseNav} activeNav={activeNav} toggleNav={toggleNav} cart={cart} />
       <Routes>
         <Route path="/Men" element={<Men changeCurrItem={changeCurrItem} dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
         <Route path="/Women" element={<Women changeCurrItem={changeCurrItem} dropdown={dropdown} changeDropdown={changeDropdown} data={data} />} />
