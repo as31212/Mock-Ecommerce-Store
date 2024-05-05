@@ -11,7 +11,7 @@ const Men = ({data,dropdown,changeDropdown,changeCurrItem})=>{
         <img className="object-cover w-full h-96" src={el.img} alt={`${el.item_name} picture`} />
       </Link>
       <div className="p-4">
-        <p className="text-lg font-bold mb-2">{el.item_name}</p>
+        <p className="text-lg mb-2">{el.item_name}</p>
         <p>
           <span className="sale-price font-bold text-gray-600">{`$${el.sale_price} `}</span>
           <span className="initial-price text-gray-400 line-through">{`$${el.initial_price}`}</span>
@@ -26,7 +26,7 @@ const Men = ({data,dropdown,changeDropdown,changeCurrItem})=>{
         <img className="object-cover w-full h-96" src={el.img} alt={`${el.item_name} picture`} />
       </Link>
       <div className="p-4">
-        <p className="text-lg font-bold mb-2">{el.item_name}</p>
+        <p className="text-lg mb-2">{el.item_name}</p>
         <p>
           <span className="sale-price font-bold text-gray-600">{`$${el.sale_price} `}</span>
           <span className="initial-price text-gray-400 line-through">{`$${el.initial_price}`}</span>

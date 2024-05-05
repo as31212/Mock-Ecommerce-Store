@@ -11,7 +11,7 @@ const Shop = ({ data,changeCurrItem }) => {
         <img className="object-cover w-full h-96" src={el.img} alt={`${el.item_name} picture`} />
       </Link>
       <div className="p-4">
-        <p className="text-lg font-bold mb-2">{el.item_name}</p>
+        <p className="text-lg mb-2">{el.item_name}</p>
         <p>
           <span className="sale-price font-bold text-gray-600">{`$${el.sale_price} `}</span>
           <span className="initial-price text-gray-400 line-through">{`$${el.initial_price}`}</span>
@@ -28,7 +28,7 @@ const Shop = ({ data,changeCurrItem }) => {
         <img className="object-cover w-full h-96" src={el.img} alt={`${el.item_name} picture`} />
       </Link>
       <div className="p-4">
-        <p className="text-lg font-bold mb-2">{el.item_name}</p>
+        <p className="text-lg mb-2">{el.item_name}</p>
         <p>
           <span className="sale-price font-bold text-gray-600">{`$${el.sale_price} `}</span>
           <span className="initial-price text-gray-400 line-through">{`$${el.initial_price}`}</span>
@@ -59,7 +59,7 @@ const Shop = ({ data,changeCurrItem }) => {
           <h2 className="text-7xl font-semibold">
             Collection Out <span className="font-bold text-orange-400">NOW</span>
           </h2>
-          <button className="w-1/2 text-3xl p-4 rounded-full bg-orange-400 hover:brightness-90">
+          <button className="w-1/2 text-white text-3xl p-3 px-10 rounded-full bg-orange-400 hover:brightness-90">
             <a href="#shop-third-page">Latest Collection </a>
             <i className="fa-solid fa-arrow-right"></i>
           </button>
@@ -72,22 +72,20 @@ const Shop = ({ data,changeCurrItem }) => {
         />
       </div>
       <div className="" id="shop-second-page">
-        <h2 className="text-center text-3xl font-semibold">Popular</h2>
-        <hr className="w-40 border-8 border-orange-400 mr-auto ml-auto" />
+        <h2 className="text-center text-3xl font-semibold border-b-2 border-orange-400 w-1/3 mx-auto pb-2">Popular</h2>
         <div className="flex flex-wrap gap-10 justify-center mt-5 min-h-screen">{items.slice(0,4)}</div>
       </div>
       <div className="page" id="shop-third-page">
-      <h2 className="text-center text-3xl font-semibold">Latest Collection</h2>
-        <hr className="w-40 border-8 border-orange-400 mr-auto ml-auto" />
+      <h2 className="text-center text-3xl font-semibold border-b-2 border-orange-400 w-1/3 mx-auto pb-2">Latest Collection</h2>
         <div className="flex flex-wrap justify-center gap-10 p-20">
           {!more?latestCollection.slice(0,8) : latestCollection.slice(0,16)}
         </div>
         {more ? (
   <a href="#shop-third-page" className="flex justify-center">
-    <button className="  mb-5 showing-more mr-auto ml-auto border-2 p-3 bg-white rounded-full hover:bg-orange-400 hover:text-black duration-150" id="show-more-button" onClick={toggleShow}>Show Less</button>
+    <button className="  mb-5 border-2 p-3 bg-orange-400 text-white rounded-full" id="show-more-button" onClick={toggleShow}>Show Less</button>
   </a>
 ) : (
-  <div className="flex justify-center"><button className="  mb-5 showing-more mr-auto ml-auto border-2 p-3 bg-white rounded-full hover:bg-orange-400 hover:text-black duration-150" id="show-more-button" onClick={toggleShow}>Show More</button></div>
+  <div className="flex justify-center "><button className=" mb-5 border-2 p-3 rounded-full hover:bg-orange-400 hover:text-white duration-200 ease-in-out" id="show-more-button" onClick={toggleShow}>Show More</button></div>
 )}
         <div className="text-white flex flex-col gap-10 h-96 mx-10 justify-center items-center bg-orange-400 mb-5 "  id="shop-fourth-page">
           <div id="shop-text-div">
