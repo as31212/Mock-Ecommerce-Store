@@ -14,6 +14,25 @@ import Purchase from "./components/Purchase";
 import Footer from "./components/Footer";
 
 function App() {
+// Quantity 
+const [currQuantity,setCurrQuantity]  =useState(1);
+const increaseQuantity = ()=>{
+  setCurrQuantity(Number(currQuantity) + 1);
+}
+const decreaseQuantity = ()=>{
+  if(currQuantity === 1){
+    return;
+  }
+setCurrQuantity(Number(currQuantity) - 1)
+}
+const changeQuantityInput = (event)=>{
+setCurrQuantity(event.target.value);
+}
+
+const quantityReset = ()=>{
+  setCurrQuantity(1);
+}
+
 // hamburger bar
 const [activeNav,setActiveNav] = useState(false);
 const toggleNav = ()=>{
@@ -70,7 +89,7 @@ const addToCart = (obj) => {
     setCart([...cart,
       {
         id: obj.id,
-        quantity: 1,
+        quantity: currQuantity,
         img: obj.img,
         clothing_type: obj.clothing_type,
         sale_price: obj.sale_price,
@@ -106,7 +125,7 @@ const removeFromCart = (id)=>{
         <Route path="/Login" element={<Login />} />
         <Route path="/Cart" element={<Cart updateQuantity={updateQuantity} removeFromCart={removeFromCart} cart={cart} data={data} />} />
         <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/Purchase" element={<Purchase cart={cart} addToCart={addToCart} currItem={currItem} data={data}/>} />
+        <Route path="/Purchase" element={<Purchase quantityReset={quantityReset} currQuantity={currQuantity} decreaseQuantity={decreaseQuantity} increaseQuantity={increaseQuantity} changeQuantityInput={changeQuantityInput} cart={cart} addToCart={addToCart} currItem={currItem} data={data}/>} />
       </Routes>
     </Router>
   );
