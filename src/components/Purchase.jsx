@@ -20,7 +20,7 @@ const handleClick = ()=>{
         <p className="text-gray-600"><b>Category:</b> {item.clothing_type}</p>
         <div className="flex justify-center" id="quantity">
             <button className="border-2 p-2 border-white bg-orange-400 font-bold text-white" onClick={()=>decreaseQuantity()}>-</button>
-            <input className=" appearance-none w-3/12 border-2" onChange={()=>{changeQuantityInput(event)}} value={currQuantity} type="number" />
+            <input className=" appearance-none w-2/12 border-2" onChange={()=>{changeQuantityInput(event)}} value={currQuantity} type="number" />
             <button className="border-2 p-2 border-white bg-orange-400 font-bold text-white" onClick={()=>increaseQuantity()}>+</button>
         </div>
         <div className="flex items-center">
